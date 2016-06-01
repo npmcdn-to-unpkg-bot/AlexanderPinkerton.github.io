@@ -1,0 +1,149 @@
+
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@supports (position: sticky) {
+  body {
+    padding-top: 0;
+  }
+
+  header {
+    position: sticky;
+  }
+
+}
+
+.navbar {
+  position: relative;
+  height: 80px;
+  width: 100%;
+  transition: 0.5s ease;
+}
+
+.navbar .nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+}
+
+.navbar .nav .item {
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+}
+
+.navbar .nav .github {
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.navbar .nav .item a {
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	line-height: 26.4px;
+  text-decoration: none;
+  color: inherit;
+  padding:0;
+}
+
+.navbar .nav .item img {
+  width: 80px;
+  height: inherit;
+  /*transition: 0.5s ease;*/
+}
+
+
+ul li :hover{
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav .item a :hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5%;
+  width: 70px;
+  height: 70px;
+  transition: 0.5s ease;
+}
+
+.navbar .logo img {
+  float: left;
+  height: 70px;
+  width: 70px;
+  transition: 0.5s ease;
+}
+
+.scrolled {
+ transition: 0.5s ease;
+}
+
+.scrolled.navbar {
+  height: 50px; 
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: 0.5s ease;
+
+}
+
+
+.scrolled.navbar .nav .item {
+  line-height: 50px;
+  transition: 0.5s ease;
+  padding: 0;
+}
+
+.scrolled.navbar .nav .github {
+  vertical-align: middle;
+  line-height: inherit;
+}
+
+.scrolled.navbar .nav .item a{
+  font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: lighter;
+	line-height: 26.4px;
+  text-decoration: none;
+  color: gray;
+  padding:0;
+}
+
+
+
+.scrolled.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5%;
+  width: 40px;
+  height: 40px;
+  /*background-color: firebrick;*/
+  transition: 0.5s ease;
+}
+
+.scrolled.navbar .logo img{
+  float: left;
+  width: 40px;
+  height: 40px;
+  transition: 0.5s ease;
+}
+

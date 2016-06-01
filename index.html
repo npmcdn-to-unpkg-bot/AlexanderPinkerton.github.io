@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Alexander Pinkerton</title>
+
+  <link rel="stylesheet" href="css/portfolio.css">
+  <!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">-->
+
+  <!-- Load depedencies  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://npmcdn.com/angular2@2.0.0-beta.0/bundles/angular2-polyfills.js"></script>
+  <script src="https://npmcdn.com/typescript@1.7.5/lib/typescript.js"></script>
+  <script src="https://npmcdn.com/systemjs@0.19.8/dist/system.src.js"></script>
+  <script src="https://npmcdn.com/rxjs@5.0.0-beta.0/bundles/Rx.js"></script>
+  <script src="https://npmcdn.com/angular2@2.0.0-beta.0/bundles/angular2.dev.js"></script>
+  <script>
+    // Config the transpiler to be typescript.
+    System.config({transpiler: 'typescript'});
+    
+    // Load components
+    System.import('components/navbar.ts')
+    System.import('components/parallax.ts')
+  </script>
+  <script>
+    //===================Navbar Transform======================
+    $(document).ready(function() {
+      $(window).on('scroll', function() {
+                if (Math.round($(window).scrollTop()) > 10) {
+          $('.navbar').addClass('scrolled');
+        } else {
+          $('.navbar').removeClass('scrolled');
+        }
+    });
+    });
+  </script>
+</head>
+
+<body>
+
+  <navbar></navbar>
+  <parallax></parallax>
+ 
+</body>
+
+</html>

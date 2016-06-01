@@ -1,0 +1,34 @@
+/* Font Face
+========================================================================== */
+
+@font-face {
+	font-family: 'quicksandlight';
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+*{
+  box-sizing: border-box;
+}
+
+
+body
+{
+	background-image: url("../assets/gauss.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-size: cover; 
+    position: absolute;
+  	top: 0;
+  	margin: 0;
+  	padding: 0;
+  	width: 100%;
+  	padding-top: 80px;
+  	/*height: 1900px;*/
+}
+
+
+
+
